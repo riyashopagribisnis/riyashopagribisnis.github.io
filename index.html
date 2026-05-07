@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riya Shop — Produk Pertanian Segar Langsung Petani</title>
+
+  <!-- File CSS eksternal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       ============================================================ -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+
+        <!-- Logo website -->
+        <a href="index.html" class="logo">Riya <span>Shop</span></a>
+
+        <!-- Navigasi menu -->
+        <ul class="nav-links">
+          <li><a href="index.html" class="aktif">Beranda</a></li>
+          <li><a href="product.html">Produk <span class="badge-promo">Promo</span></a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO SECTION — bagian pertama yang dilihat pengunjung
+       ============================================================ -->
+  <section class="hero">
+
+    <!-- Gambar latar hero -->
+    <img
+      src="assets/images/hero-banner.png"
+      alt="Sayuran segar dari petani lokal"
+      class="hero-bg"
+    />
+
+    <!-- Overlay semi-transparan agar teks terbaca -->
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-konten">
+
+        <!-- Label kategori -->
+        <span class="hero-label">Langsung dari Petani Lokal</span>
+
+        <!-- Judul utama -->
+        <h1>Produk Pertanian<br><em>Segar dan Berkualitas</em></h1>
+
+        <!-- Deskripsi singkat -->
+        <p>
+          Dapatkan hasil panen terbaik langsung dari petani lokal terpercaya.
+          Tanpa perantara, harga lebih hemat, kualitas terjamin setiap hari.
+        </p>
+
+        <!-- Tombol ajakan bertindak -->
+        <div class="hero-cta">
+          <a href="product.html" class="btn-utama">Lihat Produk Kami</a>
+          <small>Pengiriman ke seluruh wilayah</small>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION KEUNGGULAN — 4 fitur singkat
+       ============================================================ -->
+  <section class="section-unggulan">
+    <div class="container">
+      <div class="grid-unggulan">
+
+        <div class="item-unggulan">
+          <div class="ikon-box"><span>100%</span></div>
+          <h4>100% Organik</h4>
+          <p>Bebas pestisida kimia berbahaya, aman untuk seluruh keluarga Anda.</p>
+        </div>
+
+        <div class="item-unggulan">
+          <div class="ikon-box"><span>Lokal</span></div>
+          <h4>Petani Lokal</h4>
+          <p>Mendukung petani Indonesia, setiap pembelian berarti bagi mereka.</p>
+        </div>
+
+        <div class="item-unggulan">
+          <div class="ikon-box"><span>Higienis</span></div>
+          <h4>Packing Higienis</h4>
+          <p>Dikemas rapi dan bersih agar kualitas produk tetap terjaga.</p>
+        </div>
+
+        <div class="item-unggulan">
+          <div class="ikon-box"><span>Hemat</span></div>
+          <h4>Harga Terbaik</h4>
+          <p>Langsung dari sumber, harga lebih terjangkau tanpa perantara.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION PRODUK — preview kartu produk
+       ============================================================ -->
+  <section class="section-produk">
+    <div class="container">
+
+      <!-- Judul section -->
+      <div class="section-judul">
+        <h2>Produk Pilihan Hari Ini</h2>
+        <p>Panen segar, langsung diantar ke pintu rumah Anda</p>
+      </div>
+
+      <!-- Grid kartu produk -->
+      <div class="grid-produk">
+
+        <!-- Kartu Produk 1 — Cabai Merah -->
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <!-- Gambar produk menggunakan file .png -->
+            <img src="assets/images/cabai.png" alt="Cabai Merah Segar 1 kg" />
+            <span class="kartu-badge merah">Promo</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Cabai Merah Segar 1 kg</p>
+            <p class="kartu-harga">Rp 25.000</p>
+            <p class="kartu-deskripsi">
+              Panen hari ini, segar dan pedas alami dari kebun petani lokal.
+            </p>
+            <a href="product.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- Kartu Produk 2 — Brokoli -->
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/brokoli.png" alt="Brokoli Organik 500 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Brokoli Organik 500 g</p>
+            <p class="kartu-harga">Rp 18.000</p>
+            <p class="kartu-deskripsi">
+              Brokoli segar kaya vitamin, dipanen pagi, sampai masih renyah.
+            </p>
+            <a href="product.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- Kartu Produk 3 — Tomat -->
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/tomat.png" alt="Tomat Cherry 250 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Tomat Cherry 250 g</p>
+            <p class="kartu-harga">Rp 12.000</p>
+            <p class="kartu-deskripsi">
+              Manis segar, cocok untuk salad dan masakan sehari-hari.
+            </p>
+            <a href="product.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- Kartu Produk 4 — Bawang -->
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/bawang.png" alt="Bawang Merah 1 kg" />
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Bawang Merah 1 kg</p>
+            <p class="kartu-harga">Rp 30.000</p>
+            <p class="kartu-deskripsi">
+              Bawang merah lokal pilihan, kering sempurna, aroma kuat alami.
+            </p>
+            <a href="product.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+      </div><!-- /grid-produk -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-isi">
+        <span class="footer-logo">Riya <span>Shop</span></span>
+        <p>&copy; 2025 Riya Shop — Mini Project Agribisnis</p>
+        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 4</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
