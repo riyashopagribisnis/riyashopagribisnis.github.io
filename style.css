@@ -1071,8 +1071,74 @@ footer p {
   .hero { height: auto; padding: 60px 0; }
   .hero-konten h1 { font-size: 2.2rem; }
 
-  /* Navbar: sembunyikan link di mobile (bisa tambahkan hamburger menu) */
-  .nav-links { display: none; }
+  /* Navbar: sembunyikan link di mobile, tampilkan hamburger */
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background-color: var(--putih);
+    flex-direction: column;
+    gap: 0;
+    padding: 16px 0 24px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    z-index: 99;
+    border-top: 1px solid #e8e8e3;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 14px 28px;
+    font-size: 1rem;
+    border-radius: 0;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  /* Hamburger button */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 101;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--hijau-tua);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
 
   /* Kotak kontak */
   .kotak-kontak { padding: 32px 24px; }
@@ -1094,6 +1160,11 @@ footer p {
   .area-cta { flex-direction: column; }
   .area-cta .btn-utama,
   .area-cta .btn-outline { width: 100%; }
+}
+
+/* Hamburger hanya muncul di mobile */
+.hamburger {
+  display: none;
 }
 
 /* --- Logo gambar di navbar --- */
