@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Riya Shop — Produk Pertanian Segar Langsung Petani</title>
+
+  <!-- File CSS eksternal -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,11 +15,10 @@
     <div class="container">
       <nav class="navbar">
 
-        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
-          <img src="assets/images/logo.png" alt="Logo Riya Shop" style="height: 35px; width: auto;" />
-          <div>Riya <span>Shop</span></div>
-        </a>
+        <!-- Logo website -->
+        <a href="index.html" class="logo">Riya <span>Shop</span></a>
 
+        <!-- Navigasi menu -->
         <ul class="nav-links">
           <li><a href="index.html" class="aktif">Beranda</a></li>
           <li><a href="product.html">Produk <span class="badge-promo">Promo</span></a></li>
@@ -29,17 +30,37 @@
     </div>
   </header>
 
+
+  <!-- ============================================================
+       HERO SECTION — bagian pertama yang dilihat pengunjung
+       ============================================================ -->
   <section class="hero">
-    <img src="assets/images/hero-banner.png" alt="Sayuran segar dari petani lokal" class="hero-bg" />
+
+    <!-- Gambar latar hero -->
+    <img
+      src="assets/images/hero-banner.png"
+      alt="Sayuran segar dari petani lokal"
+      class="hero-bg"
+    />
+
+    <!-- Overlay semi-transparan agar teks terbaca -->
     <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-konten">
+
+        <!-- Label kategori -->
         <span class="hero-label">Langsung dari Petani Lokal</span>
+
+        <!-- Judul utama -->
         <h1>Produk Pertanian<br><em>Segar dan Berkualitas</em></h1>
+
+        <!-- Deskripsi singkat -->
         <p>
           Dapatkan hasil panen terbaik langsung dari petani lokal terpercaya.
           Tanpa perantara, harga lebih hemat, kualitas terjamin setiap hari.
         </p>
+
+        <!-- Tombol ajakan bertindak -->
         <div class="hero-cta">
           <a href="product.html" class="btn-utama">Lihat Produk Kami</a>
           <small>Pengiriman ke seluruh wilayah</small>
@@ -48,6 +69,10 @@
     </div>
   </section>
 
+
+  <!-- ============================================================
+       SECTION KEUNGGULAN — 4 fitur singkat
+       ============================================================ -->
   <section class="section-unggulan">
     <div class="container">
       <div class="grid-unggulan">
@@ -80,6 +105,10 @@
     </div>
   </section>
 
+
+  <!-- ============================================================
+       SECTION PRODUK — preview kartu produk
+       ============================================================ -->
   <section class="section-produk">
     <div class="container">
 
