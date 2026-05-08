@@ -1045,6 +1045,11 @@ footer p {
   font-size: 0.83rem;
 }
 
+/* Hamburger: tersembunyi di desktop */
+.hamburger {
+  display: none;
+}
+
 /* ============================================================
    RESPONSIF (Mobile-friendly)
    ============================================================ */
@@ -1125,15 +1130,18 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    width: 40px;
-    height: 40px;
+    align-items: center;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
     cursor: pointer;
     z-index: 300;
     position: relative;
     background: none;
-    border: none;
-    padding: 4px;
+    border: 2px solid var(--hijau-muda);
+    border-radius: 8px;
+    padding: 6px;
+    flex-shrink: 0;
   }
 
   .hamburger span {
