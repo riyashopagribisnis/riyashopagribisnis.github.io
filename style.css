@@ -186,7 +186,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 18px 0;
 }
 
 /* Logo */
@@ -374,6 +374,13 @@ header {
   gap: 24px;
 }
 
+@media (max-width: 600px) {
+  .grid-unggulan {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
 .item-unggulan {
   background-color: var(--putih);
   border-radius: var(--radius);
@@ -437,6 +444,13 @@ header {
   gap: 28px;
 }
 
+@media (max-width: 600px) {
+  .grid-produk {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
 /* Satu kartu produk */
 .kartu-produk {
   background-color: var(--putih);
@@ -498,6 +512,43 @@ header {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+
+@media (max-width: 600px) {
+  .kartu-info {
+    padding: 12px;
+    gap: 5px;
+  }
+  .kartu-gambar {
+    height: 140px;
+  }
+  .kartu-nama {
+    font-size: 0.88rem;
+  }
+  .kartu-harga {
+    font-size: 0.95rem;
+  }
+  .kartu-deskripsi {
+    display: none;
+  }
+  .kartu-info .btn-utama {
+    margin-top: 8px;
+    font-size: 0.78rem;
+    padding: 8px 12px;
+  }
+  .item-unggulan {
+    padding: 20px 14px;
+  }
+  .item-unggulan h4 {
+    font-size: 0.88rem;
+  }
+  .item-unggulan p {
+    font-size: 0.78rem;
+  }
+  .ikon-box {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .kartu-nama {
@@ -1073,8 +1124,13 @@ footer p {
 
 @media (max-width: 768px) {
   /* Hero */
-  .hero { height: auto; padding: 60px 0; }
-  .hero-konten h1 { font-size: 2.2rem; }
+  .hero { height: auto; padding: 52px 0 48px; }
+  .hero-konten h1 { font-size: 2rem; }
+  .hero-konten p { font-size: 0.9rem; margin-bottom: 24px; }
+  .hero-label { font-size: 0.7rem; letter-spacing: 1.2px; }
+  .section-produk { padding: 52px 0; }
+  .section-unggulan { padding: 48px 0; }
+  .section-judul { margin-bottom: 36px; }
 
   /* Navbar: hamburger menu mobile */
   .nav-links {
@@ -1131,24 +1187,24 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 6px;
-    width: 44px;
-    height: 44px;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     z-index: 300;
     position: relative;
-    background: none;
-    border: 2px solid var(--hijau-muda);
+    background: var(--hijau-utama);
+    border: none;
     border-radius: 8px;
-    padding: 6px;
+    padding: 8px;
     flex-shrink: 0;
   }
 
   .hamburger span {
     display: block;
-    width: 26px;
-    height: 2.5px;
-    background-color: var(--hijau-tua);
+    width: 22px;
+    height: 2px;
+    background-color: var(--putih);
     border-radius: 3px;
     transition: all 0.3s ease;
     transform-origin: center;
@@ -1156,7 +1212,7 @@ footer p {
 
   /* Animasi jadi X saat terbuka */
   .hamburger.aktif span:nth-child(1) {
-    transform: translateY(7.5px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
     background-color: var(--putih);
   }
   .hamburger.aktif span:nth-child(2) {
@@ -1164,7 +1220,7 @@ footer p {
     transform: scaleX(0);
   }
   .hamburger.aktif span:nth-child(3) {
-    transform: translateY(-7.5px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
     background-color: var(--putih);
   }
 
