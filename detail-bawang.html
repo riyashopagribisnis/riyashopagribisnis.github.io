@@ -22,6 +22,11 @@
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="contact.html">Kontak</a></li>
         </ul>
+              <button class="hamburger" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </div>
   </header>
@@ -155,5 +160,21 @@
     </div>
   </footer>
 
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks  = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("aktif");
+      navLinks.classList.toggle("terbuka");
+      document.body.style.overflow = navLinks.classList.contains("terbuka") ? "hidden" : "";
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("aktif");
+        navLinks.classList.remove("terbuka");
+        document.body.style.overflow = "";
+      });
+    });
+  </script>
 </body>
 </html>
