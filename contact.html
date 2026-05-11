@@ -5,6 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontak — Riya Shop</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .layout-contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .formulir-kontak {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .formulir-kontak h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #2d3436;
+    }
+    .formulir-kontak p {
+      font-size: 0.9rem;
+      color: #636e72;
+      margin-bottom: 1.5rem;
+    }
+    .grup-formulir {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .bidang-formulir {
+      margin-bottom: 1.25rem;
+    }
+    .bidang-formulir label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #2d3436;
+      margin-bottom: 0.4rem;
+    }
+    .bidang-formulir input,
+    .bidang-formulir select,
+    .bidang-formulir textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #dfe6e9;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      background: #f8f9fa;
+      transition: 0.2s;
+      box-sizing: border-box;
+    }
+    .bidang-formulir input:focus,
+    .bidang-formulir select:focus,
+    .bidang-formulir textarea:focus {
+      outline: none;
+      border-color: #27ae60;
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+    }
+    .bidang-formulir textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    /* Tombol hijau */
+    .tombol-kirim {
+      width: 100%;
+      padding: 1rem;
+      background: #27ae60;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .tombol-kirim:hover {
+      background: #219a52;
+    }
+    /* Link WhatsApp juga hijau */
+    .btn-whatsapp {
+      background: #27ae60 !important;
+      border: 2px solid #27ae60 !important;
+      color: #fff !important;
+    }
+    .btn-whatsapp:hover {
+      background: #219a52 !important;
+      border-color: #219a52 !important;
+    }
+    .catatan-form {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      color: #b2bec3;
+      text-align: center;
+      line-height: 1.5;
+    }
+    @media (max-width: 768px) {
+      .layout-contact {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -12,19 +118,17 @@
   <header>
     <div class="container">
       <nav class="navbar">
-        
         <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
           <img src="assets/images/logo.png" alt="Logo Riya Shop" style="height: 35px; width: auto;" />
           <div>Riya <span>Shop</span></div>
         </a>
-
         <ul class="nav-links">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="product.html">Produk <span class="badge-promo">Promo</span></a></li>
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="contact.html" class="aktif">Kontak</a></li>
         </ul>
-              <button class="hamburger" aria-label="Buka Menu">
+        <button class="hamburger" aria-label="Buka Menu">
           <span></span>
           <span></span>
           <span></span>
@@ -33,33 +137,28 @@
     </div>
   </header>
 
-
   <div class="breadcrumb">
     <div class="container">
       <a href="index.html">Beranda</a> &rsaquo; Kontak
     </div>
   </div>
 
-
   <section class="section-contact">
     <div class="container">
-
       <div class="section-judul">
         <h2>Hubungi Kami</h2>
         <p>Ada pertanyaan atau ingin memesan? Kami siap membantu Anda</p>
       </div>
 
       <div class="layout-contact">
+        
         <div class="kotak-kontak">
-
           <h2>Informasi Kontak</h2>
           <p class="subjudul">
-            Jangan ragu menghubungi kami. Kami merespons pesan
-            dengan cepat setiap hari.
+            Jangan ragu menghubungi kami. Kami merespons pesan dengan cepat setiap hari.
           </p>
 
           <div class="baris-kontak">
-
             <div class="item-kontak">
               <div class="ikon-kontak">N</div>
               <div>
@@ -67,7 +166,6 @@
                 <p class="nilai-kontak">Nur Fitriyah</p>
               </div>
             </div>
-
             <div class="item-kontak">
               <div class="ikon-kontak">W</div>
               <div>
@@ -75,7 +173,6 @@
                 <p class="nilai-kontak">+62 881-0265-18814</p>
               </div>
             </div>
-
             <div class="item-kontak">
               <div class="ikon-kontak">L</div>
               <div>
@@ -83,7 +180,6 @@
                 <p class="nilai-kontak">Banyuwangi, Jawa Timur</p>
               </div>
             </div>
-
             <div class="item-kontak">
               <div class="ikon-kontak">J</div>
               <div>
@@ -91,30 +187,81 @@
                 <p class="nilai-kontak">Senin – Sabtu, 07.00 – 17.00 WIB</p>
               </div>
             </div>
+          </div>
 
-          </div><a
-            href="https://wa.me/62881026518814"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-whatsapp"
-          >
+          <a href="https://wa.me/62881026518814" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
             Chat via WhatsApp Sekarang
           </a>
-
           <p class="catatan-kontak">
             Kami biasanya merespons dalam kurang dari 1 jam pada jam operasional.
           </p>
+        </div>
 
-        </div></div></div>
+        <div class="formulir-kontak">
+          <h3>Kirim Pesan kepada Kami</h3>
+          <p>Lengkapi data berikut dan kami akan membalas melalui WhatsApp.</p>
+
+          <div class="grup-formulir">
+            <div class="bidang-formulir">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" placeholder="Nama Anda" required />
+            </div>
+            <div class="bidang-formulir">
+              <label for="telepon">Nomor Telepon</label>
+              <input type="tel" id="telepon" name="telepon" placeholder="0812-xxxx-xxxx" />
+            </div>
+          </div>
+
+          <div class="bidang-formulir">
+            <label for="email">Alamat Surel (Email)</label>
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+          </div>
+
+          <div class="bidang-formulir">
+            <label for="topik">Topik Pesan</label>
+            <select id="topik" name="topik">
+              <option value="">Pilih topik</option>
+              <option value="Pemesanan">Pemesanan Produk</option>
+              <option value="Konsultasi">Konsultasi Produk</option>
+              <option value="Kemitraan">Kemitraan / Reseller</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="bidang-formulir">
+            <label for="produk">Produk yang Diminati (opsional)</label>
+            <select id="produk" name="produk">
+              <option value="">Pilih produk</option>
+              <option value="Cabai Merah Segar 1 kg">Cabai Merah Segar 1 kg</option>
+              <option value="Brokoli Organik 500 g">Brokoli Organik 500 g</option>
+              <option value="Tomat Cherry 250 g">Tomat Cherry 250 g</option>
+              <option value="Bawang Merah 1 kg">Bawang Merah 1 kg</option>
+              <option value="Belum tahu">Belum memiliki preferensi</option>
+            </select>
+          </div>
+
+          <div class="bidang-formulir">
+            <label for="pesan">Isi Pesan</label>
+            <textarea id="pesan" name="pesan" placeholder="Tulis kebutuhan atau pertanyaan Anda..." required></textarea>
+          </div>
+
+          <button type="button" class="tombol-kirim" onclick="kirimPesan()">
+            Kirim Pesan via WhatsApp
+          </button>
+          <p class="catatan-form">
+            Dengan menekan tombol, Anda akan diarahkan ke WhatsApp. Data hanya digunakan untuk komunikasi ini.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
-
 
   <footer>
     <div class="container">
       <div class="footer-isi">
         <span class="footer-logo">Riya <span>Shop</span></span>
         <p>&copy; 2026 Riya Shop — Agribisnis</p>
-        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 4</p>
+        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 2</p>
       </div>
     </div>
   </footer>
@@ -134,6 +281,37 @@
         document.body.style.overflow = "";
       });
     });
+
+    function kirimPesan() {
+      const nama    = document.getElementById('nama').value.trim();
+      const telepon = document.getElementById('telepon').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const topik   = document.getElementById('topik').value;
+      const produk  = document.getElementById('produk').value;
+      const pesan   = document.getElementById('pesan').value.trim();
+
+      if (!nama || !email || !pesan) {
+        alert('Mohon lengkapi Nama, Email, dan Isi Pesan terlebih dahulu.');
+        return;
+      }
+
+      let teksWA = `Halo, saya ${nama}.`;
+      if (telepon) teksWA += ` Nomor HP: ${telepon}.`;
+      teksWA += ` Email: ${email}.`;
+      if (topik) teksWA += ` Topik: ${topik}.`;
+      if (produk) teksWA += ` Produk diminati: ${produk}.`;
+      teksWA += ` Pesan: ${pesan}`;
+
+      const urlWA = `https://wa.me/62881026518814?text=${encodeURIComponent(teksWA)}`;
+      window.open(urlWA, '_blank');
+
+      document.getElementById('nama').value = '';
+      document.getElementById('telepon').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('topik').value = '';
+      document.getElementById('produk').value = '';
+      document.getElementById('pesan').value = '';
+    }
   </script>
 </body>
 </html>

@@ -1,0 +1,1702 @@
+Microsoft Windows [Version 10.0.26200.8246]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Joki Tugas\punya riya>ls -l
+total 149
+-rw-r--r-- 1 جفون 197121   130 May  8 04:59 README.md
+-rw-r--r-- 1 جفون 197121  6219 May  8 07:03 about.html
+drwxr-xr-x 1 جفون 197121     0 May  7 19:30 assets
+-rw-r--r-- 1 جفون 197121 10537 May 11 10:30 contact.html
+-rw-r--r-- 1 جفون 197121  6358 May  8 07:03 detail-bawang.html
+-rw-r--r-- 1 جفون 197121  6184 May  8 07:03 detail-brokoli.html
+-rw-r--r-- 1 جفون 197121  7916 May  8 07:03 detail-cabai.html
+-rw-r--r-- 1 جفون 197121  6281 May  8 07:03 detail-tomat.html
+-rw-r--r-- 1 جفون 197121  6494 May  8 07:03 index.html
+-rw-r--r-- 1 جفون 197121 50107 May 11 08:21 joki.txt
+-rw-r--r-- 1 جفون 197121  5608 May  8 07:03 product.html
+-rw-r--r-- 1 جفون 197121 24687 May 11 10:30 style.css
+
+D:\Joki Tugas\punya riya>tree /f
+Folder PATH listing for volume DATA
+Volume serial number is 23C0-F300
+D:.
+│   about.html
+│   contact.html
+│   detail-bawang.html
+│   detail-brokoli.html
+│   detail-cabai.html
+│   detail-tomat.html
+│   index.html
+│   joki.txt
+│   product.html
+│   README.md
+│   style.css
+│
+└───assets
+    └───images
+            bawang.png
+            brokoli.png
+            cabai.png
+            hero-banner.png
+            logo.png
+            profile-owner.png
+            tomat.png
+
+
+D:\Joki Tugas\punya riya>for /r %f in (*.html) do type "%f" >> joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\about.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\contact.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\detail-bawang.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\detail-brokoli.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\detail-cabai.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\detail-tomat.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\index.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\product.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>for /r %f in (*.html) do type "%f" >> joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\about.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\contact.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\detail-bawang.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\detail-brokoli.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\detail-cabai.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\detail-tomat.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\index.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>type "D:\Joki Tugas\punya riya\product.html"  1>>joki.txt
+
+D:\Joki Tugas\punya riya>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami — Riya Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       ============================================================ -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Riya <span>Shop</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="product.html">Produk <span class="badge-promo">Promo</span></a></li>
+          <li><a href="about.html" class="aktif">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+              <button class="hamburger" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       BREADCRUMB
+       ============================================================ -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Beranda</a> &rsaquo; Tentang Kami
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       SECTION TENTANG KAMI
+       ============================================================ -->
+  <section class="section-about">
+    <div class="container">
+
+      <!-- Judul Section -->
+      <div class="section-judul">
+        <h2>Tentang Kami</h2>
+        <p>Kenali lebih dekat orang di balik Riya Shop</p>
+      </div>
+
+      <!-- Layout 2 Kolom -->
+      <div class="layout-about">
+
+        <!-- Kolom Kiri — Kartu Profil -->
+        <div class="kartu-profil">
+          <div class="foto-profil">
+            <img
+              src="assets/images/profile-owner.png"
+              alt="Nur Fitriyah — Pemilik Riya Shop"
+            />
+          </div>
+          <p class="nama-pemilik">Nur Fitriyah</p>
+          <p class="jabatan-pemilik">
+            Mahasiswi Agribisnis<br>
+            Politeknik Negeri Banyuwangi
+          </p>
+          <span class="tag-kampus">Poliwangi — Semester 2</span>
+        </div>
+
+        <!-- Kolom Kanan — Konten Teks -->
+        <div class="konten-about">
+
+          <h2>Dari Ladang Petani,<br><em>Langsung ke Meja Makan Anda</em></h2>
+
+          <p>
+            Riya Shop adalah platform jual beli produk pertanian segar yang
+            menghubungkan petani lokal Banyuwangi langsung dengan konsumen.
+            Dirintis sebagai mini project studi Agribisnis, Riya Shop hadir
+            dengan semangat untuk memangkas rantai distribusi yang panjang
+            sehingga harga lebih terjangkau dan petani mendapat nilai jual
+            yang lebih layak.
+          </p>
+
+          <p>
+            Setiap produk yang kami jual dipilih dengan teliti — dipanen segar,
+            dikemas higienis, dan dikirim cepat agar kualitasnya sampai di
+            tangan Anda dalam kondisi terbaik. Kami percaya bahwa produk
+            pertanian lokal berkualitas tinggi layak dijangkau oleh semua orang.
+          </p>
+
+          <!-- Daftar Misi -->
+          <div class="list-misi">
+
+            <div class="item-misi">
+              <div class="nomor-misi">1</div>
+              <div>
+                <h4>Mendukung Petani Lokal</h4>
+                <p>
+                  Setiap transaksi di Riya Shop berarti langsung mendukung
+                  kesejahteraan petani Indonesia, khususnya di wilayah Banyuwangi.
+                </p>
+              </div>
+            </div>
+
+            <div class="item-misi">
+              <div class="nomor-misi">2</div>
+              <div>
+                <h4>Produk Organik Bebas Pestisida</h4>
+                <p>
+                  Kami hanya bermitra dengan petani yang menerapkan praktik
+                  pertanian aman, mengutamakan kesehatan konsumen dan lingkungan.
+                </p>
+              </div>
+            </div>
+
+            <div class="item-misi">
+              <div class="nomor-misi">3</div>
+              <div>
+                <h4>Harga Transparan dan Adil</h4>
+                <p>
+                  Tanpa perantara berlebih, harga lebih hemat untuk pembeli
+                  dan keuntungan lebih besar bagi petani.
+                </p>
+              </div>
+            </div>
+
+            <div class="item-misi">
+              <div class="nomor-misi">4</div>
+              <div>
+                <h4>Pengiriman ke Seluruh Wilayah</h4>
+                <p>
+                  Kami berkomitmen mengantarkan produk segar ke pintu rumah
+                  Anda, ke mana pun Anda berada.
+                </p>
+              </div>
+            </div>
+
+          </div><!-- /list-misi -->
+
+          <a href="contact.html" class="btn-utama" style="align-self: flex-start;">
+            Hubungi Kami
+          </a>
+
+        </div><!-- /konten-about -->
+      </div><!-- /layout-about -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-isi">
+        <span class="footer-logo">Riya <span>Shop</span></span>
+        <p>&copy; 2026 Riya Shop — Agribisnis</p>
+        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 2</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks  = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("aktif");
+      navLinks.classList.toggle("terbuka");
+      document.body.style.overflow = navLinks.classList.contains("terbuka") ? "hidden" : "";
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("aktif");
+        navLinks.classList.remove("terbuka");
+        document.body.style.overflow = "";
+      });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak — Riya Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Styling tambahan untuk form kontak (jika style.css belum memiliki) -->
+  <style>
+    .layout-contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .formulir-kontak {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .formulir-kontak h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #2d3436;
+    }
+    .formulir-kontak p {
+      font-size: 0.9rem;
+      color: #636e72;
+      margin-bottom: 1.5rem;
+    }
+    .grup-formulir {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .bidang-formulir {
+      margin-bottom: 1.25rem;
+    }
+    .bidang-formulir label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #2d3436;
+      margin-bottom: 0.4rem;
+    }
+    .bidang-formulir input,
+    .bidang-formulir select,
+    .bidang-formulir textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #dfe6e9;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      background: #f8f9fa;
+      transition: 0.2s;
+      box-sizing: border-box;
+    }
+    .bidang-formulir input:focus,
+    .bidang-formulir select:focus,
+    .bidang-formulir textarea:focus {
+      outline: none;
+      border-color: #6c5ce7;
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(108,92,231,0.1);
+    }
+    .bidang-formulir textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .tombol-kirim {
+      width: 100%;
+      padding: 1rem;
+      background: #6c5ce7;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .tombol-kirim:hover {
+      background: #5b4cdb;
+    }
+    .catatan-form {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      color: #b2bec3;
+      text-align: center;
+      line-height: 1.5;
+    }
+    /* Responsive untuk mobile */
+    @media (max-width: 768px) {
+      .layout-contact {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header sama seperti Riya Shop sebelumnya -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+          <img src="assets/images/logo.png" alt="Logo Riya Shop" style="height: 35px; width: auto;" />
+          <div>Riya <span>Shop</span></div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="product.html">Produk <span class="badge-promo">Promo</span></a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html" class="aktif">Kontak</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Beranda</a> &rsaquo; Kontak
+    </div>
+  </div>
+
+  <section class="section-contact">
+    <div class="container">
+      <div class="section-judul">
+        <h2>Hubungi Kami</h2>
+        <p>Ada pertanyaan atau ingin memesan? Kami siap membantu Anda</p>
+      </div>
+
+      <!-- Layout dua kolom: info + form -->
+      <div class="layout-contact">
+        
+        <!-- Kolom Kiri: Informasi Kontak (dari Riya, diperbarui) -->
+        <div class="kotak-kontak">
+          <h2>Informasi Kontak</h2>
+          <p class="subjudul">
+            Jangan ragu menghubungi kami. Kami merespons pesan dengan cepat setiap hari.
+          </p>
+
+          <div class="baris-kontak">
+            <div class="item-kontak">
+              <div class="ikon-kontak">N</div>
+              <div>
+                <p class="label-kontak">Nama</p>
+                <p class="nilai-kontak">Nur Fitriyah</p>
+              </div>
+            </div>
+            <div class="item-kontak">
+              <div class="ikon-kontak">W</div>
+              <div>
+                <p class="label-kontak">WhatsApp / Telepon</p>
+                <p class="nilai-kontak">+62 881-0265-18814</p>
+              </div>
+            </div>
+            <div class="item-kontak">
+              <div class="ikon-kontak">L</div>
+              <div>
+                <p class="label-kontak">Lokasi</p>
+                <p class="nilai-kontak">Banyuwangi, Jawa Timur</p>
+              </div>
+            </div>
+            <div class="item-kontak">
+              <div class="ikon-kontak">J</div>
+              <div>
+                <p class="label-kontak">Jam Operasional</p>
+                <p class="nilai-kontak">Senin – Sabtu, 07.00 – 17.00 WIB</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/62881026518814" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+            Chat via WhatsApp Sekarang
+          </a>
+          <p class="catatan-kontak">
+            Kami biasanya merespons dalam kurang dari 1 jam pada jam operasional.
+          </p>
+        </div>
+
+        <!-- Kolom Kanan: Formulir Kontak (logika seperti punya Nina) -->
+        <div class="formulir-kontak">
+          <h3>Kirim Pesan kepada Kami</h3>
+          <p>Lengkapi data berikut dan kami akan membalas melalui WhatsApp.</p>
+
+          <div class="grup-formulir">
+            <div class="bidang-formulir">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" placeholder="Nama Anda" required />
+            </div>
+            <div class="bidang-formulir">
+              <label for="telepon">Nomor Telepon</label>
+              <input type="tel" id="telepon" name="telepon" placeholder="0812-xxxx-xxxx" />
+            </div>
+          </div>
+
+          <div class="bidang-formulir">
+            <label for="email">Alamat Surel (Email)</label>
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+          </div>
+
+          <div class="bidang-formulir">
+            <label for="topik">Topik Pesan</label>
+            <select id="topik" name="topik">
+              <option value="">Pilih topik</option>
+              <option value="Pemesanan">Pemesanan Produk</option>
+              <option value="Konsultasi">Konsultasi Produk</option>
+              <option value="Kemitraan">Kemitraan / Reseller</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="bidang-formulir">
+            <label for="produk">Produk yang Diminati (opsional)</label>
+            <select id="produk" name="produk">
+              <option value="">Pilih produk</option>
+              <option value="Produk A">Produk A</option>
+              <option value="Produk B">Produk B</option>
+              <option value="Belum tahu">Belum memiliki preferensi</option>
+            </select>
+          </div>
+
+          <div class="bidang-formulir">
+            <label for="pesan">Isi Pesan</label>
+            <textarea id="pesan" name="pesan" placeholder="Tulis kebutuhan atau pertanyaan Anda..." required></textarea>
+          </div>
+
+          <button type="button" class="tombol-kirim" onclick="kirimPesan()">
+            Kirim Pesan via WhatsApp
+          </button>
+          <p class="catatan-form">
+            Dengan menekan tombol, Anda akan diarahkan ke WhatsApp. Data hanya digunakan untuk komunikasi ini.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-isi">
+        <span class="footer-logo">Riya <span>Shop</span></span>
+        <p>&copy; 2026 Riya Shop — Agribisnis</p>
+        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 4</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript: logika WhatsApp mirip dengan punya Nina -->
+  <script>
+    // Hamburger menu (sama seperti sebelumnya)
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks  = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("aktif");
+      navLinks.classList.toggle("terbuka");
+      document.body.style.overflow = navLinks.classList.contains("terbuka") ? "hidden" : "";
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("aktif");
+        navLinks.classList.remove("terbuka");
+        document.body.style.overflow = "";
+      });
+    });
+
+    // Fungsi kirim pesan (logika diadaptasi dari Nina)
+    function kirimPesan() {
+      const nama    = document.getElementById('nama').value.trim();
+      const telepon = document.getElementById('telepon').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const topik   = document.getElementById('topik').value;
+      const produk  = document.getElementById('produk').value;
+      const pesan   = document.getElementById('pesan').value.trim();
+
+      // Validasi sederhana
+      if (!nama || !email || !pesan) {
+        alert('Mohon lengkapi Nama, Email, dan Isi Pesan terlebih dahulu.');
+        return;
+      }
+
+      // Susun teks WhatsApp
+      let teksWA = `Halo, saya ${nama}.`;
+      if (telepon) teksWA += ` Nomor HP: ${telepon}.`;
+      teksWA += ` Email: ${email}.`;
+      if (topik) teksWA += ` Topik: ${topik}.`;
+      if (produk) teksWA += ` Produk diminati: ${produk}.`;
+      teksWA += ` Pesan: ${pesan}`;
+
+      // Nomor WhatsApp Riya Shop
+      const urlWA = `https://wa.me/62881026518814?text=${encodeURIComponent(teksWA)}`;
+      window.open(urlWA, '_blank');
+
+      // Reset form setelah dikirim
+      document.getElementById('nama').value = '';
+      document.getElementById('telepon').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('topik').value = '';
+      document.getElementById('produk').value = '';
+      document.getElementById('pesan').value = '';
+    }
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bawang Merah 1 kg — Riya Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Logo Riya Shop" />
+          Riya <span>Shop</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="product.html" class="aktif">Produk <span class="badge-promo">Promo</span></a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+              <button class="hamburger" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Beranda</a> &rsaquo;
+      <a href="product.html">Produk</a> &rsaquo;
+      Bawang Merah 1 kg
+    </div>
+  </div>
+
+  <section class="section-detail">
+    <div class="container">
+      <div class="layout-detail">
+
+        <div class="kolom-gambar">
+          <div class="bingkai-gambar">
+            <img src="assets/images/bawang.png" alt="Bawang Merah 1 kg" />
+            <span class="label-promo">Lokal</span>
+          </div>
+        </div>
+
+        <div class="kolom-info">
+
+          <span class="tag-kategori">Rempah & Bumbu</span>
+
+          <h1 class="nama-produk">Bawang Merah<br>1 Kilogram</h1>
+
+          <div class="blok-harga">
+            <span class="harga-utama">Rp 30.000</span>
+            <span class="harga-satuan">per 1 kg</span>
+          </div>
+
+          <div class="caption-promo">
+            <strong>Stok Terbatas!</strong> Bawang merah lokal pilihan, langsung dari
+            petani Banyuwangi. Kering sempurna, tahan lama, aroma kuat alami.
+          </div>
+
+          <div class="deskripsi-produk">
+            <h3>Deskripsi Produk</h3>
+            <p>
+              Bawang merah lokal berkualitas tinggi dari petani Banyuwangi.
+              Dikeringkan dengan sempurna sehingga tahan lama dan tidak cepat
+              busuk. Aroma tajam khas bawang merah segar menjadi tanda mutu
+              terbaik yang siap melengkapi setiap masakan dapur Anda — dari
+              tumisan, sambal, hingga bawang goreng renyah.
+            </p>
+          </div>
+
+          <ul class="list-keunggulan">
+            <li><span class="ceklis">v</span> Bawang lokal pilihan, ukuran seragam</li>
+            <li><span class="ceklis">v</span> Dikeringkan sempurna, tahan lebih lama</li>
+            <li><span class="ceklis">v</span> Aroma kuat alami, cocok untuk semua masakan</li>
+            <li><span class="ceklis">v</span> Langsung dari petani lokal Banyuwangi</li>
+          </ul>
+
+          <div class="info-stok">
+            <span class="dot-hijau"></span>
+            Stok tersedia — siap dikirim hari ini
+          </div>
+
+          <div class="area-cta">
+            <a href="contact.html" class="btn-utama">Pesan Sekarang</a>
+            <a href="product.html" class="btn-outline">Lihat Produk Lain</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-produk" style="background-color: var(--abu-muda);">
+    <div class="container">
+      <div class="section-judul">
+        <h2>Produk Lainnya</h2>
+        <p>Pilihan segar lain yang siap diantarkan ke rumah Anda</p>
+      </div>
+      <div class="grid-produk">
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/cabai.png" alt="Cabai Merah Segar 1 kg" />
+            <span class="kartu-badge merah">Promo</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Cabai Merah Segar 1 kg</p>
+            <p class="kartu-harga">Rp 25.000</p>
+            <p class="kartu-deskripsi">Panen hari ini, segar dan pedas alami dari kebun petani lokal.</p>
+            <a href="detail-cabai.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/brokoli.png" alt="Brokoli Organik 500 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Brokoli Organik 500 g</p>
+            <p class="kartu-harga">Rp 18.000</p>
+            <p class="kartu-deskripsi">Brokoli segar kaya vitamin, dipanen pagi, sampai masih renyah.</p>
+            <a href="detail-brokoli.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/tomat.png" alt="Tomat Cherry 250 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Tomat Cherry 250 g</p>
+            <p class="kartu-harga">Rp 12.000</p>
+            <p class="kartu-deskripsi">Manis segar, cocok untuk salad dan masakan sehari-hari.</p>
+            <a href="detail-tomat.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-isi">
+        <span class="footer-logo">Riya <span>Shop</span></span>
+        <p>&copy; 2026 Riya Shop — Agribisnis</p>
+        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 2</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks  = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("aktif");
+      navLinks.classList.toggle("terbuka");
+      document.body.style.overflow = navLinks.classList.contains("terbuka") ? "hidden" : "";
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("aktif");
+        navLinks.classList.remove("terbuka");
+        document.body.style.overflow = "";
+      });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brokoli Organik 500 g — Riya Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Logo Riya Shop" />
+          Riya <span>Shop</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="product.html" class="aktif">Produk <span class="badge-promo">Promo</span></a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+              <button class="hamburger" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Beranda</a> &rsaquo;
+      <a href="product.html">Produk</a> &rsaquo;
+      Brokoli Organik 500 g
+    </div>
+  </div>
+
+  <section class="section-detail">
+    <div class="container">
+      <div class="layout-detail">
+
+        <div class="kolom-gambar">
+          <div class="bingkai-gambar">
+            <img src="assets/images/brokoli.png" alt="Brokoli Organik 500 g" />
+            <span class="label-promo">Organik</span>
+          </div>
+        </div>
+
+        <div class="kolom-info">
+
+          <span class="tag-kategori">Sayuran Segar</span>
+
+          <h1 class="nama-produk">Brokoli Organik<br>500 Gram</h1>
+
+          <div class="blok-harga">
+            <span class="harga-utama">Rp 18.000</span>
+            <span class="harga-satuan">per 500 g</span>
+          </div>
+
+          <div class="caption-promo">
+            <strong>Pilihan Sehat!</strong> Brokoli organik tanpa pestisida, dipanen
+            segar setiap pagi. Stok terbatas sesuai hasil panen harian.
+          </div>
+
+          <div class="deskripsi-produk">
+            <h3>Deskripsi Produk</h3>
+            <p>
+              Brokoli organik segar langsung dari petani lokal Banyuwangi.
+              Dipanen setiap pagi agar tetap renyah dan kandungan vitaminnya
+              terjaga maksimal. Bebas pestisida kimia, cocok untuk MPASI bayi,
+              diet sehat, maupun masakan sehari-hari keluarga Anda.
+            </p>
+          </div>
+
+          <ul class="list-keunggulan">
+            <li><span class="ceklis">v</span> Dipanen segar setiap pagi</li>
+            <li><span class="ceklis">v</span> 100% organik, bebas pestisida</li>
+            <li><span class="ceklis">v</span> Kaya vitamin C dan serat</li>
+            <li><span class="ceklis">v</span> Dikemas higienis dan rapi</li>
+          </ul>
+
+          <div class="info-stok">
+            <span class="dot-hijau"></span>
+            Stok tersedia — siap dikirim hari ini
+          </div>
+
+          <div class="area-cta">
+            <a href="contact.html" class="btn-utama">Pesan Sekarang</a>
+            <a href="product.html" class="btn-outline">Lihat Produk Lain</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-produk" style="background-color: var(--abu-muda);">
+    <div class="container">
+      <div class="section-judul">
+        <h2>Produk Lainnya</h2>
+        <p>Pilihan segar lain yang siap diantarkan ke rumah Anda</p>
+      </div>
+      <div class="grid-produk">
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/cabai.png" alt="Cabai Merah Segar 1 kg" />
+            <span class="kartu-badge merah">Promo</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Cabai Merah Segar 1 kg</p>
+            <p class="kartu-harga">Rp 25.000</p>
+            <p class="kartu-deskripsi">Panen hari ini, segar dan pedas alami dari kebun petani lokal.</p>
+            <a href="detail-cabai.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/tomat.png" alt="Tomat Cherry 250 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Tomat Cherry 250 g</p>
+            <p class="kartu-harga">Rp 12.000</p>
+            <p class="kartu-deskripsi">Manis segar, cocok untuk salad dan masakan sehari-hari.</p>
+            <a href="detail-tomat.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/bawang.png" alt="Bawang Merah 1 kg" />
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Bawang Merah 1 kg</p>
+            <p class="kartu-harga">Rp 30.000</p>
+            <p class="kartu-deskripsi">Bawang merah lokal pilihan, kering sempurna, aroma kuat alami.</p>
+            <a href="detail-bawang.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-isi">
+        <span class="footer-logo">Riya <span>Shop</span></span>
+        <p>&copy; 2026 Riya Shop — Agribisnis</p>
+        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 2</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks  = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("aktif");
+      navLinks.classList.toggle("terbuka");
+      document.body.style.overflow = navLinks.classList.contains("terbuka") ? "hidden" : "";
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("aktif");
+        navLinks.classList.remove("terbuka");
+        document.body.style.overflow = "";
+      });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cabai Merah Segar 1 kg — Riya Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       ============================================================ -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Logo Riya Shop" />
+          Riya <span>Shop</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="product.html" class="aktif">Produk <span class="badge-promo">Promo</span></a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+              <button class="hamburger" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       BREADCRUMB
+       ============================================================ -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Beranda</a> &rsaquo;
+      <a href="product.html">Produk</a> &rsaquo;
+      Cabai Merah Segar 1 kg
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       SECTION DETAIL PRODUK
+       ============================================================ -->
+  <section class="section-detail">
+    <div class="container">
+      <div class="layout-detail">
+
+        <!-- Kolom Kiri — Gambar Produk -->
+        <div class="kolom-gambar">
+          <div class="bingkai-gambar">
+            <img
+              src="assets/images/cabai.png"
+              alt="Cabai Merah Segar 1 kg"
+            />
+            <span class="label-promo">Promo</span>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan — Informasi Produk -->
+        <div class="kolom-info">
+
+          <!-- Tag Kategori -->
+          <span class="tag-kategori">Sayuran Segar</span>
+
+          <!-- Nama Produk -->
+          <h1 class="nama-produk">Cabai Merah Segar<br>1 Kilogram</h1>
+
+          <!-- Blok Harga -->
+          <div class="blok-harga">
+            <span class="harga-utama">Rp 25.000</span>
+            <span class="harga-satuan">per 1 kg</span>
+          </div>
+
+          <!-- Caption Promosi -->
+          <div class="caption-promo">
+            <strong>Promo Hari Ini!</strong> Beli 2 kg cabai merah, gratis ongkos kirim
+            ke seluruh wilayah. Stok terbatas, segera pesan sebelum habis.
+          </div>
+
+          <!-- Deskripsi Produk -->
+          <div class="deskripsi-produk">
+            <h3>Deskripsi Produk</h3>
+            <p>
+              Cabai merah segar langsung dipanen hari ini dari kebun petani lokal
+              terpercaya di Banyuwangi. Cabai ini memiliki cita rasa pedas alami
+              yang khas, warna merah cerah, dan tekstur padat — tanda kesegaran
+              yang tidak diragukan. Tanpa bahan pengawet, langsung dari sumber,
+              dikemas bersih sebelum dikirim ke rumah Anda.
+            </p>
+          </div>
+
+          <!-- Daftar Keunggulan -->
+          <ul class="list-keunggulan">
+            <li>
+              <span class="ceklis">v</span>
+              Dipanen hari ini, kesegaran terjamin
+            </li>
+            <li>
+              <span class="ceklis">v</span>
+              Bebas pestisida kimia berbahaya
+            </li>
+            <li>
+              <span class="ceklis">v</span>
+              Dikemas higienis dan rapi
+            </li>
+            <li>
+              <span class="ceklis">v</span>
+              Langsung dari petani lokal Banyuwangi
+            </li>
+          </ul>
+
+          <!-- Info Stok -->
+          <div class="info-stok">
+            <span class="dot-hijau"></span>
+            Stok tersedia — siap dikirim hari ini
+          </div>
+
+          <!-- Tombol CTA -->
+          <div class="area-cta">
+            <a href="contact.html" class="btn-utama">Pesan Sekarang</a>
+            <a href="product.html" class="btn-outline">Lihat Produk Lain</a>
+          </div>
+
+        </div><!-- /kolom-info -->
+      </div><!-- /layout-detail -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION PRODUK LAINNYA
+       ============================================================ -->
+  <section class="section-produk" style="background-color: var(--abu-muda);">
+    <div class="container">
+
+      <div class="section-judul">
+        <h2>Produk Lainnya</h2>
+        <p>Pilihan segar lain yang siap diantarkan ke rumah Anda</p>
+      </div>
+
+      <!-- Grid produk lain — href mengarah ke masing-masing halaman detail -->
+      <div class="grid-produk">
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/brokoli.png" alt="Brokoli Organik 500 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Brokoli Organik 500 g</p>
+            <p class="kartu-harga">Rp 18.000</p>
+            <p class="kartu-deskripsi">
+              Brokoli segar kaya vitamin, dipanen pagi, sampai masih renyah.
+            </p>
+            <a href="detail-brokoli.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/tomat.png" alt="Tomat Cherry 250 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Tomat Cherry 250 g</p>
+            <p class="kartu-harga">Rp 12.000</p>
+            <p class="kartu-deskripsi">
+              Manis segar, cocok untuk salad dan masakan sehari-hari.
+            </p>
+            <a href="detail-tomat.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/bawang.png" alt="Bawang Merah 1 kg" />
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Bawang Merah 1 kg</p>
+            <p class="kartu-harga">Rp 30.000</p>
+            <p class="kartu-deskripsi">
+              Bawang merah lokal pilihan, kering sempurna, aroma kuat alami.
+            </p>
+            <a href="detail-bawang.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+      </div><!-- /grid-produk -->
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-isi">
+        <span class="footer-logo">Riya <span>Shop</span></span>
+        <p>&copy; 2026 Riya Shop — Agribisnis</p>
+        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 2</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks  = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("aktif");
+      navLinks.classList.toggle("terbuka");
+      document.body.style.overflow = navLinks.classList.contains("terbuka") ? "hidden" : "";
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("aktif");
+        navLinks.classList.remove("terbuka");
+        document.body.style.overflow = "";
+      });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomat Cherry 250 g — Riya Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Logo Riya Shop" />
+          Riya <span>Shop</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="product.html" class="aktif">Produk <span class="badge-promo">Promo</span></a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+              <button class="hamburger" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Beranda</a> &rsaquo;
+      <a href="product.html">Produk</a> &rsaquo;
+      Tomat Cherry 250 g
+    </div>
+  </div>
+
+  <section class="section-detail">
+    <div class="container">
+      <div class="layout-detail">
+
+        <div class="kolom-gambar">
+          <div class="bingkai-gambar">
+            <img src="assets/images/tomat.png" alt="Tomat Cherry 250 g" />
+            <span class="label-promo">Organik</span>
+          </div>
+        </div>
+
+        <div class="kolom-info">
+
+          <span class="tag-kategori">Sayuran Segar</span>
+
+          <h1 class="nama-produk">Tomat Cherry<br>250 Gram</h1>
+
+          <div class="blok-harga">
+            <span class="harga-utama">Rp 12.000</span>
+            <span class="harga-satuan">per 250 g</span>
+          </div>
+
+          <div class="caption-promo">
+            <strong>Favorit Pelanggan!</strong> Tomat cherry manis alami, cocok untuk
+            salad, bekal, hingga jus segar. Dipanen langsung dari kebun organik lokal.
+          </div>
+
+          <div class="deskripsi-produk">
+            <h3>Deskripsi Produk</h3>
+            <p>
+              Tomat cherry organik segar dari petani lokal Banyuwangi. Berukuran
+              kecil dengan rasa manis dan sedikit asam yang menyegarkan. Kaya
+              antioksidan likopen, sangat baik untuk kesehatan jantung dan kulit.
+              Tanpa bahan pengawet, langsung dikemas saat panen dan siap dikirim
+              ke rumah Anda.
+            </p>
+          </div>
+
+          <ul class="list-keunggulan">
+            <li><span class="ceklis">v</span> Manis alami, tanpa pemanis buatan</li>
+            <li><span class="ceklis">v</span> Organik, bebas pestisida kimia</li>
+            <li><span class="ceklis">v</span> Kaya antioksidan dan vitamin A</li>
+            <li><span class="ceklis">v</span> Dikemas higienis langsung saat panen</li>
+          </ul>
+
+          <div class="info-stok">
+            <span class="dot-hijau"></span>
+            Stok tersedia — siap dikirim hari ini
+          </div>
+
+          <div class="area-cta">
+            <a href="contact.html" class="btn-utama">Pesan Sekarang</a>
+            <a href="product.html" class="btn-outline">Lihat Produk Lain</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-produk" style="background-color: var(--abu-muda);">
+    <div class="container">
+      <div class="section-judul">
+        <h2>Produk Lainnya</h2>
+        <p>Pilihan segar lain yang siap diantarkan ke rumah Anda</p>
+      </div>
+      <div class="grid-produk">
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/cabai.png" alt="Cabai Merah Segar 1 kg" />
+            <span class="kartu-badge merah">Promo</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Cabai Merah Segar 1 kg</p>
+            <p class="kartu-harga">Rp 25.000</p>
+            <p class="kartu-deskripsi">Panen hari ini, segar dan pedas alami dari kebun petani lokal.</p>
+            <a href="detail-cabai.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/brokoli.png" alt="Brokoli Organik 500 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Brokoli Organik 500 g</p>
+            <p class="kartu-harga">Rp 18.000</p>
+            <p class="kartu-deskripsi">Brokoli segar kaya vitamin, dipanen pagi, sampai masih renyah.</p>
+            <a href="detail-brokoli.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/bawang.png" alt="Bawang Merah 1 kg" />
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Bawang Merah 1 kg</p>
+            <p class="kartu-harga">Rp 30.000</p>
+            <p class="kartu-deskripsi">Bawang merah lokal pilihan, kering sempurna, aroma kuat alami.</p>
+            <a href="detail-bawang.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-isi">
+        <span class="footer-logo">Riya <span>Shop</span></span>
+        <p>&copy; 2026 Riya Shop — Agribisnis</p>
+        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 2</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks  = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("aktif");
+      navLinks.classList.toggle("terbuka");
+      document.body.style.overflow = navLinks.classList.contains("terbuka") ? "hidden" : "";
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("aktif");
+        navLinks.classList.remove("terbuka");
+        document.body.style.overflow = "";
+      });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riya Shop — Produk Pertanian Segar Langsung Petani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+          <img src="assets/images/logo.png" alt="Logo Riya Shop" style="height: 35px; width: auto;" />
+          <div>Riya <span>Shop</span></div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="aktif">Beranda</a></li>
+          <li><a href="product.html">Produk <span class="badge-promo">Promo</span></a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+
+              <button class="hamburger" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="assets/images/hero-banner.png" alt="Sayuran segar dari petani lokal" class="hero-bg" />
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-konten">
+        <span class="hero-label">Langsung dari Petani Lokal</span>
+        <h1>Produk Pertanian<br><em>Segar dan Berkualitas</em></h1>
+        <p>
+          Dapatkan hasil panen terbaik langsung dari petani lokal terpercaya.
+          Tanpa perantara, harga lebih hemat, kualitas terjamin setiap hari.
+        </p>
+        <div class="hero-cta">
+          <a href="product.html" class="btn-utama">Lihat Produk Kami</a>
+          <small>Pengiriman ke seluruh wilayah</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-unggulan">
+    <div class="container">
+      <div class="grid-unggulan">
+
+        <div class="item-unggulan">
+          <div class="ikon-box"><span>100%</span></div>
+          <h4>100% Organik</h4>
+          <p>Bebas pestisida kimia berbahaya, aman untuk seluruh keluarga Anda.</p>
+        </div>
+
+        <div class="item-unggulan">
+          <div class="ikon-box"><span>Lokal</span></div>
+          <h4>Petani Lokal</h4>
+          <p>Mendukung petani Indonesia, setiap pembelian berarti bagi mereka.</p>
+        </div>
+
+        <div class="item-unggulan">
+          <div class="ikon-box"><span>Higienis</span></div>
+          <h4>Packing Higienis</h4>
+          <p>Dikemas rapi dan bersih agar kualitas produk tetap terjaga.</p>
+        </div>
+
+        <div class="item-unggulan">
+          <div class="ikon-box"><span>Hemat</span></div>
+          <h4>Harga Terbaik</h4>
+          <p>Langsung dari sumber, harga lebih terjangkau tanpa perantara.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section-produk">
+    <div class="container">
+
+      <div class="section-judul">
+        <h2>Produk Pilihan Hari Ini</h2>
+        <p>Panen segar, langsung diantar ke pintu rumah Anda</p>
+      </div>
+
+      <div class="grid-produk">
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/cabai.png" alt="Cabai Merah Segar 1 kg" />
+            <span class="kartu-badge merah">Promo</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Cabai Merah Segar 1 kg</p>
+            <p class="kartu-harga">Rp 25.000</p>
+            <p class="kartu-deskripsi">
+              Panen hari ini, segar dan pedas alami dari kebun petani lokal.
+            </p>
+            <a href="detail-cabai.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/brokoli.png" alt="Brokoli Organik 500 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Brokoli Organik 500 g</p>
+            <p class="kartu-harga">Rp 18.000</p>
+            <p class="kartu-deskripsi">
+              Brokoli segar kaya vitamin, dipanen pagi, sampai masih renyah.
+            </p>
+            <a href="detail-brokoli.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/tomat.png" alt="Tomat Cherry 250 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Tomat Cherry 250 g</p>
+            <p class="kartu-harga">Rp 12.000</p>
+            <p class="kartu-deskripsi">
+              Manis segar, cocok untuk salad dan masakan sehari-hari.
+            </p>
+            <a href="detail-tomat.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/bawang.png" alt="Bawang Merah 1 kg" />
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Bawang Merah 1 kg</p>
+            <p class="kartu-harga">Rp 30.000</p>
+            <p class="kartu-deskripsi">
+              Bawang merah lokal pilihan, kering sempurna, aroma kuat alami.
+            </p>
+            <a href="detail-bawang.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-isi">
+        <span class="footer-logo">Riya <span>Shop</span></span>
+        <p>&copy; 2026 Riya Shop — Agribisnis</p>
+        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 4</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks  = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("aktif");
+      navLinks.classList.toggle("terbuka");
+      document.body.style.overflow = navLinks.classList.contains("terbuka") ? "hidden" : "";
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("aktif");
+        navLinks.classList.remove("terbuka");
+        document.body.style.overflow = "";
+      });
+    });
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katalog Produk — Riya Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       ============================================================ -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Logo Riya Shop" />
+          Riya <span>Shop</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="product.html" class="aktif">Produk <span class="badge-promo">Promo</span></a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+              <button class="hamburger" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       BREADCRUMB
+       ============================================================ -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Beranda</a> &rsaquo; Katalog Produk
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       SECTION KATALOG PRODUK — semua produk dalam grid
+       ============================================================ -->
+  <section class="section-produk">
+    <div class="container">
+
+      <div class="section-judul">
+        <h2>Katalog Produk Kami</h2>
+        <p>Semua produk segar langsung dari petani lokal Banyuwangi</p>
+      </div>
+
+      <!-- Grid semua produk — setiap href mengarah ke halaman detailnya masing-masing -->
+      <div class="grid-produk">
+
+        <!-- Cabai Merah -->
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/cabai.png" alt="Cabai Merah Segar 1 kg" />
+            <span class="kartu-badge merah">Promo</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Cabai Merah Segar 1 kg</p>
+            <p class="kartu-harga">Rp 25.000</p>
+            <p class="kartu-deskripsi">
+              Panen hari ini, segar dan pedas alami dari kebun petani lokal.
+            </p>
+            <a href="detail-cabai.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- Brokoli -->
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/brokoli.png" alt="Brokoli Organik 500 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Brokoli Organik 500 g</p>
+            <p class="kartu-harga">Rp 18.000</p>
+            <p class="kartu-deskripsi">
+              Brokoli segar kaya vitamin, dipanen pagi, sampai masih renyah.
+            </p>
+            <a href="detail-brokoli.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- Tomat Cherry -->
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/tomat.png" alt="Tomat Cherry 250 g" />
+            <span class="kartu-badge">Organik</span>
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Tomat Cherry 250 g</p>
+            <p class="kartu-harga">Rp 12.000</p>
+            <p class="kartu-deskripsi">
+              Manis segar, cocok untuk salad dan masakan sehari-hari.
+            </p>
+            <a href="detail-tomat.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- Bawang Merah -->
+        <div class="kartu-produk">
+          <div class="kartu-gambar">
+            <img src="assets/images/bawang.png" alt="Bawang Merah 1 kg" />
+          </div>
+          <div class="kartu-info">
+            <p class="kartu-nama">Bawang Merah 1 kg</p>
+            <p class="kartu-harga">Rp 30.000</p>
+            <p class="kartu-deskripsi">
+              Bawang merah lokal pilihan, kering sempurna, aroma kuat alami.
+            </p>
+            <a href="detail-bawang.html" class="btn-utama">Lihat Detail</a>
+          </div>
+        </div>
+
+      </div><!-- /grid-produk -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-isi">
+        <span class="footer-logo">Riya <span>Shop</span></span>
+        <p>&copy; 2026 Riya Shop — Agribisnis</p>
+        <p>Dibuat oleh Nur Fitriyah — Poliwangi Semester 2</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks  = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("aktif");
+      navLinks.classList.toggle("terbuka");
+      document.body.style.overflow = navLinks.classList.contains("terbuka") ? "hidden" : "";
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("aktif");
+        navLinks.classList.remove("terbuka");
+        document.body.style.overflow = "";
+      });
+    });
+  </script>
+</body>
+</html>
